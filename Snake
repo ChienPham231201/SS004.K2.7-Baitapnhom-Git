@@ -200,6 +200,26 @@ void VeTuong()
 		cout << (char)222;
 	}
 }
+bool GameOver()
+{
+	if (Ran[0].y == TuongTren)
+		return true;
+	else
+		if (Ran[0].y == TuongDuoi)
+			return true;
+		else
+			if (Ran[0].x == TuongTrai)
+				return true;
+			else
+				if (Ran[0].x == TuongPhai)
+					return true;
+	for (int i = 1; i < SoDot; i++)
+	{
+		if (Ran[0].x == Ran[i].x && Ran[0].y == Ran[i].y)
+			return true;
+	}
+	return false;
+}
 void XuLyThua()
 {
 	if (GameOver)
