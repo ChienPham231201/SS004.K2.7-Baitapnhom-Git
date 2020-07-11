@@ -219,3 +219,16 @@ ToaDo HienMoi()
 	cout << "*";
 	return Moi;
 }
+void ThemDot()
+{
+	Ran[SoDot] = Ran[SoDot - 1];
+	SoDot++;
+}
+bool KiemTraDaAnMoi(ToaDo Moi)
+{
+	if (Moi.x == Ran[0].x && Moi.y == Ran[0].y)
+		return true;
+	else
+		return false;
+
+}
