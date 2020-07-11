@@ -209,3 +209,13 @@ void XuLyThua()
 		cout << "-----------gameover---------" << endl;
 	}
 }
+ToaDo HienMoi()
+{
+	ToaDo Moi;
+	srand(time(NULL));
+	Moi.x = rand() % (TuongPhai - TuongTrai - 1) + (TuongTrai + 1);
+	Moi.y = rand() % (TuongDuoi - TuongTren - 1) + (TuongTren + 1);
+	gotoXY(Moi.x, Moi.y);
+	cout << "*";
+	return Moi;
+}
