@@ -163,6 +163,32 @@ bool KiemTraDaAnMoi(ToaDo Moi);
 
 int main()
 {
+        KhoiTaoRan();
+	int huong = Phai;
+	VeTuong();
+	ToaDo Moi = HienMoi();
+	int diem = SoDot;
+	unsigned tocdo = 300;
+	while (1)
+	{
+		ToaDo Dotcuoicu = DiChuyen(huong);
+		HienThiRan(Dotcuoicu);
+		BatSuKien(huong);
+		if (KiemTraDaAnMoi(Moi))
+		{
+			Moi = HienMoi();
+			ThemDot();
+			diem++;
+			tocdo = tocdo - 2;
+		}
+		if (GameOver()==true)
+			break;
+		Sleep(tocdo);
+
+	}
+	XuLyThua();
+	cout << "Diem cua ban la: " << diem << endl;;
+	system("pause");
 	return 0;
 }
 void KhoiTaoRan()
