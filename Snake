@@ -160,7 +160,13 @@ void XuLyThua();
 ToaDo HienMoi();
 void ThemDot();
 bool KiemTraDaAnMoi(ToaDo Moi);
-
+void KhoiTaoRan()
+{
+	Ran[0].x = TuongTrai + 3;
+	Ran[1].x = TuongTrai + 2;
+	Ran[2].x = TuongTrai + 1;
+	Ran[0].y = Ran[1].y = Ran[2].y = TuongTren + 1;
+}
 int main()
 {
 	
