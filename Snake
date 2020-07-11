@@ -183,5 +183,21 @@ void HienThiRan(ToaDo Dotcuoicu)
 	gotoXY(Dotcuoicu.x, Dotcuoicu.y);
 	cout << " ";
 }
-
+void VeTuong()
+{
+	for (int i = TuongTrai; i <= TuongPhai; i++)
+	{
+		gotoXY(i, TuongTren);
+		cout << (char)220;
+		gotoXY(i, TuongDuoi);
+		cout << (char)223;
+	}
+	for (int i = TuongTren + 1; i < TuongDuoi; i++)
+	{
+		gotoXY(TuongTrai, i);
+		cout << (char)221;
+		gotoXY(TuongPhai, i);
+		cout << (char)222;
+	}
+}
 
