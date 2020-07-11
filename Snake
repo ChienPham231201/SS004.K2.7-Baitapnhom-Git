@@ -167,6 +167,17 @@ void KhoiTaoRan()
 	Ran[2].x = TuongTrai + 1;
 	Ran[0].y = Ran[1].y = Ran[2].y = TuongTren + 1;
 }
+void HienThiRan(ToaDo Dotcuoicu)
+{
+	for (int i = 0; i < SoDot; i++)
+	{
+		gotoXY(Ran[i].x, Ran[i].y);
+		cout << char(DotRan);
+		setTextColor(9);
+	}
+	gotoXY(Dotcuoicu.x, Dotcuoicu.y);
+	cout << " ";
+}
 int main()
 {
 	
