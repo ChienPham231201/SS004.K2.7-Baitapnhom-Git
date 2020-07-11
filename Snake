@@ -200,4 +200,12 @@ void VeTuong()
 		cout << (char)222;
 	}
 }
-
+void XuLyThua()
+{
+	if (GameOver)
+	{
+		Sleep(500);
+		clrscr();
+		cout << "-----------gameover---------" << endl;
+	}
+}
