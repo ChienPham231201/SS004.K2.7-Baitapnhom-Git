@@ -255,6 +255,33 @@ void XuLyThua()
 		cout << "-----------gameover---------" << endl;
 	}
 }
+void BatSuKien(int &huong)
+{
+	int key = inputKey();
+	switch (key)
+	{
+	case 'w':
+		if (huong == Xuong)
+			return;
+		huong = Len;
+		break;
+	case 's':
+		if (huong == Len)
+			return;
+		huong = Xuong;
+		break;
+	case 'a':
+		if (huong == Phai)
+			return;
+		huong = Trai;
+		break;
+	case'd':
+		if (huong == Trai)
+			return;
+		huong = Phai;
+		break;
+	}
+}
 ToaDo HienMoi()
 {
 	ToaDo Moi;
