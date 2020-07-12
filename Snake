@@ -200,6 +200,7 @@ void KhoiTaoRan()
 }
 void HienThiRan(ToaDo Dotcuoicu)
 {
+        noCursorType();
 	for (int i = 0; i < SoDot; i++)
 	{
 		gotoXY(Ran[i].x, Ran[i].y);
