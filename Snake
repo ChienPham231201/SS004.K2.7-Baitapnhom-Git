@@ -282,6 +282,30 @@ void BatSuKien(int &huong)
 		break;
 	}
 }
+ToaDo DiChuyen(int huong)
+{
+	ToaDo Dotcuoicu = Ran[SoDot - 1];
+	for (int i = SoDot - 1; i >= 1; i--)
+	{
+		Ran[i] = Ran[i - 1];
+	}
+	switch (huong)
+	{
+	case Len:
+		Ran[0].y--;
+		break;
+	case Xuong:
+		Ran[0].y++;
+		break;
+	case Trai:
+		Ran[0].x--;
+		break;
+	case Phai:
+		Ran[0].x++;
+		break;
+	}
+	return Dotcuoicu;
+}
 ToaDo HienMoi()
 {
 	ToaDo Moi;
